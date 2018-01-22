@@ -25,7 +25,7 @@ source activate qiime2
 
 ## EMP format
 
-The EMP (Earth Microbiome Project) format always contains the amplicon reads in two files: "reads.fq.sh" file and the "barcodes.fq.sh" file. We can get these two files separately from a single fastq file from any Illumina or Ion-Torrent machine by using the commnad from Qiime1 "extract_barcodes.py". 
+The EMP (Earth Microbiome Project) format always contains the amplicon reads in two files: "reads.fq.gz" file and the "barcodes.fq.gz" file. We can get these two files separately from a single fastq file from any Illumina or Ion-Torrent machine by using the commnad from Qiime1 "extract_barcodes.py". 
 
 
 ```{bash, engine = 'bash', eval = FALSE}
