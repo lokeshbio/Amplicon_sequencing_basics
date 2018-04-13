@@ -1,5 +1,6 @@
+-   [Taxa](#Justtaxa)
 -   [DADA2](#dada2)
--   [Taxa](#just taxa)
+
 
 Just Taxa
 ---------
