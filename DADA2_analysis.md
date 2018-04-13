@@ -52,3 +52,11 @@ temp <- t(seqtab.nochim)
 write.table(temp, "Piran_adap_Dada2_abund_table.tab", sep="\t")
 write.table(taxa, "Piran_adap_Dada2_taxonomy.tab", sep="\t")
 ```
+
+## taxa from fasta
+
+If you just want to assign taxonomy using DADA2 package, as it is a bit faster than vsearch, use the following code.
+
+``` r
+
+```
