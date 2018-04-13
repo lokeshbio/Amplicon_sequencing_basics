@@ -1,5 +1,18 @@
 -   [DADA2](#dada2)
 
+## taxa from fasta
+
+If you just want to assign taxonomy using DADA2 package, as it is a bit faster than vsearch, use the following code.
+
+``` r
+library(dada2); packageVersion("dada2")
+seqs <- getSequences("OTUs_frm_MadsAlb.fa",collapse = FALSE)
+taxa80 <- assignTaxonomy(seqs, "Dada2_silva_nr_v132_train_set.fa.gz", minBoot=80, multithread=10)
+write.table(taxa, "OTUs_frm_MadsAlb_Dada2_taxonomy.tab", sep="\t")
+```
+
+
+
 DADA2
 -----
 
@@ -51,12 +64,4 @@ taxa <- assignTaxonomy(seqtab.nochim, "~/Files/Database/SILVA_132/Dada2_silva_nr
 temp <- t(seqtab.nochim)
 write.table(temp, "Piran_adap_Dada2_abund_table.tab", sep="\t")
 write.table(taxa, "Piran_adap_Dada2_taxonomy.tab", sep="\t")
-```
-
-## taxa from fasta
-
-If you just want to assign taxonomy using DADA2 package, as it is a bit faster than vsearch, use the following code.
-
-``` r
-
 ```
