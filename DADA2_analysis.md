@@ -1,6 +1,8 @@
 -   [DADA2](#dada2)
+-   [Taxa](#just taxa)
 
-## taxa from fasta
+Just Taxa
+---------
 
 If you just want to assign taxonomy using DADA2 package, as it is a bit faster than vsearch, use the following code.
 
