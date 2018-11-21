@@ -1,5 +1,5 @@
 -   [QIIME2](#qiime2)
-    -   [Import, demultiplex and trim sequences](#import-and-demultiplex-sequences)
+    -   [Import, demultiplex and trim sequences](#Import,-demultiplex-and-trim-sequences)
     -   [Summarizing samples](#summarizing-samples)
     -   [DADA2 analysis](#dada2-analysis)
     -   [Visualizing files](#visualizing-files)
