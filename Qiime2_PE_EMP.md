@@ -1,5 +1,5 @@
 -   [QIIME2](#qiime2)
-    -   [Importing demultiplexed sequences](#import-and-demultiplex-sequences)
+    -   [Import, demultiplex and trim sequences](#import-and-demultiplex-sequences)
     -   [Summarizing samples](#summarizing-samples)
     -   [DADA2 analysis](#dada2-analysis)
     -   [Visualizing files](#visualizing-files)
@@ -18,7 +18,7 @@ This is the readme file for the Qiime2 pipeline to use for the analysis of 16S a
 source activate qiime2-2018.2
 ```
 
-Importing demultiplexed sequences
+Import, demultiplex and trim sequences
 ---------------------------------
 
 This step only imports Forwrd reads `forward.fastq.gz`, Reverse reads `reverse.fastq.gz` and the Barcodes `barcodes.fastq.gz` file in the EMP format
