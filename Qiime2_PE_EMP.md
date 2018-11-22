@@ -3,7 +3,6 @@
     -   [Summarizing samples](#summarizing-samples)
     -   [DADA2 analysis](#dada2-analysis)
     -   [Visualizing files](#visualizing-files)
-    -   [Merging different runs](#merging-different-runs)
     -   [Taxonomic classifications](#taxonomic-classifications)
     -   [Bar plots](#bar-plots)
     -   [Exporting classifications and table](#exporting-classifications-and-table)
@@ -78,21 +77,6 @@ qiime feature-table summarize --i-table Amp170209.table-dada2.qza --o-visualizat
 qiime tools view Amp170209.table-dada2.qzv
 qiime tools view Amp170209.rep-seqs-dada2.qzv
 ```
-
-Merging different runs
-----------------------
-
-In case there are many sequencing runs using the same barcodes for different samples, the tables and the representative sequences can be mereged together.
-
-Note: `The parameters used above should be the same for all the runs`
-
-``` bash
-qiime feature-table merge-seq-data --i-data1 Amp161122.rep-seqs-dada2.qza --i-data2 Amp170531.rep-seqs-dada2.qza --o-merged-data merged_seq.qza
-
-qiime feature-table merge --i-table1 Amp170531.table-dada2.qza --i-table2 Amp170602.table-dada2.qza --o-merged-table merged_table2.qza
-```
-
-Note: it is also to be noted that only two features can be merged togther once!
 
 Taxonomic classifications
 -------------------------
